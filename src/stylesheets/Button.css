@@ -1,0 +1,12 @@
+.button-div {
+  border: 2px solid #c7c7c7;
+  height: 200px;
+}
+
+button {
+  height: 40px;
+  width: 50px;
+  border-radius: 5px;
+  background: white;
+  font-size: 16px;
+}

@@ -1,9 +1,11 @@
 import React from 'react'
+import '../stylesheets/Button.css';
 
 const Button = (props) => {
   return (
-    <div>
-      <button></button>
+    <div className="button-div">
+      <h4>Click a button to add to the total count.</h4>
+      <button>+ 1</button>
     </div>
   )
 }
