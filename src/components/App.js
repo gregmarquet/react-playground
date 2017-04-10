@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../stylesheets/App.css';
-import Button from './Button.js'
+import CounterApp from './CounterApp.js';
 
 
 class App extends Component {
@@ -13,9 +13,7 @@ class App extends Component {
           <h2>React Playground</h2>
         </div>
 
-        <div className="counter">
-          <Button />
-        </div>
+        <CounterApp />
       </div>
     );
   }
