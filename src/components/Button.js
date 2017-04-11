@@ -5,7 +5,7 @@ const Button = (props) => {
   return (
     <div className="button-div">
       <h4>Click a button to add to the total count.</h4>
-      <button>+ 1</button>
+      <button onClick={props.handleClick}>+ 1</button>
     </div>
   )
 }
