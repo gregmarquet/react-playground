@@ -16,6 +16,7 @@ class CounterApp extends Component {
   render(){
     return(
       <div className='counter-app'>
+        <h4>Click a button to add to the total count.</h4>
         <Button handleClick={this.handleClick.bind(this)} />
         <Counter totalCount={this.state.counter} />
       </div>
