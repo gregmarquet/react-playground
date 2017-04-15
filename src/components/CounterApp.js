@@ -18,6 +18,9 @@ class CounterApp extends Component {
       <div className='counter-app'>
         <h4>Click a button to add to the total count.</h4>
         <Button handleClick={this.handleClick.bind(this)} increment={1} />
+        <Button handleClick={this.handleClick.bind(this)} increment={5} />
+        <Button handleClick={this.handleClick.bind(this)} increment={10} />
+        <Button handleClick={this.handleClick.bind(this)} increment={100} />
         <Counter totalCount={this.state.counter} />
       </div>
     )
