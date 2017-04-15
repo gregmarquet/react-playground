@@ -3,7 +3,7 @@ import '../stylesheets/Button.css';
 
 const Button = (props) => {
   return ( 
-    <button onClick={props.handleClick}>+ 1</button>    
+    <button onClick={props.handleClick}>+{props.increment}</button>    
   )
 }
 
