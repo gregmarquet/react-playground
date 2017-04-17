@@ -10,8 +10,8 @@ class CounterApp extends Component {
       counter: 0
     };
   }
-  handleClick() {
-    this.setState({counter: this.state.counter + 1})
+  handleClick(increment) {
+    this.setState({counter: this.state.counter + 1 })
   }
   render(){
     return(
