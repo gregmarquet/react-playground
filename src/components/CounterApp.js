@@ -13,6 +13,9 @@ class CounterApp extends Component {
   handleClick(increment) {
     this.setState({counter: this.state.counter + increment })
   }
+  counterReset() {
+    this.setState({counter: 0 })
+  }
   render(){
     return(
       <div className='counter-app'>
@@ -21,6 +24,7 @@ class CounterApp extends Component {
         <Button handleClick={this.handleClick.bind(this, 5)} increment={5} />
         <Button handleClick={this.handleClick.bind(this, 10)} increment={10} />
         <Button handleClick={this.handleClick.bind(this, 100)} increment={100} />
+        <Button handleClick={this.counterReset.bind(this)} increment={'reset'} />
         <Counter totalCount={this.state.counter} />
       </div>
     )
