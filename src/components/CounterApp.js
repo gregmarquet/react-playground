@@ -20,11 +20,11 @@ class CounterApp extends Component {
     return(
       <div className='counter-app'>
         <h4>Click a button to add to the total count.</h4>
-        <Button handleClick={this.handleClick.bind(this, 1)} increment={1} />
-        <Button handleClick={this.handleClick.bind(this, 5)} increment={5} />
-        <Button handleClick={this.handleClick.bind(this, 10)} increment={10} />
-        <Button handleClick={this.handleClick.bind(this, 100)} increment={100} />
-        <Button handleClick={this.counterReset.bind(this)} increment={'reset'} />
+        <Button handleClick={this.handleClick.bind(this, 1)} label={'+1'} />
+        <Button handleClick={this.handleClick.bind(this, 5)} label={'+5'} />
+        <Button handleClick={this.handleClick.bind(this, 10)} label={'+10'} />
+        <Button handleClick={this.handleClick.bind(this, 100)} label={'+100'} />
+        <Button handleClick={this.counterReset.bind(this)} label={'reset'} />
         <Counter totalCount={this.state.counter} />
       </div>
     )
