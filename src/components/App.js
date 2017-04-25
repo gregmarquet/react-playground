@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../stylesheets/App.css';
-import CounterApp from './CounterApp.js';
+import CounterApp from './counterApp/CounterApp.js';
 
 
 class App extends Component {
