@@ -8,6 +8,25 @@ class Clock extends Component {
       date: (new Date()).toLocaleTimeString()
     };
   }
+
+  componentDidMount() {
+    this.setTimer();
+  }
+
+  setTimer() {
+    this.timeout = setTimeout(this.updateClock.bind(this), 1000);
+  }
+
+  updateClock() {
+    this.setState({date: (new Date()).toLocaleTimeString()}, this.setTimer);
+  }
+
+  componentWillUnmount() {
+    if (this.timeout) {
+      clearTimeout(this.timeout);
+    }
+  }
+  
   render(){
     return(
       <div className="clock">
@@ -19,3 +38,5 @@ class Clock extends Component {
 
 
 export default Clock
+
+
